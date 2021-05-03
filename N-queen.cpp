@@ -4,7 +4,7 @@ bool issafe(int** arr,int x, int y , int n){
 
     for(int row=0; row< x ; row++){
 
-        if(arr[i][y]==1){}
+        if(arr[row][y]==1){}
         return false;
     }
     int row=x,col=y;
@@ -40,10 +40,34 @@ bool nQueue(int** arr,int x , int n){
         if(nQueue(arr,x+1,n)){
             return true;
         }
+        arr[x][col]=0; //Backtrack
         }
     }
     return false;
 
 }
+int main(){
+ int n;
+ cin>>n;
+ int** arr= new int*[n];
+ for(int i = 0 ; i<n;i++){
+     arr[i] = new int[n];
+     for(int j = 0 ; j<n;j++){
+         arr[i][j]= 0;
 
+     }
+ } 
+
+ if(nQueue(arr,0,n )){
+     for(int i = 0 ; i<n;i++){
+     
+     for(int j = 0 ; j<n;j++){
+         cout<<arr[i][j]<<" ";
+
+     }
+     cout<<endl;
+ } 
+
+ }
+ return 0;
 }
