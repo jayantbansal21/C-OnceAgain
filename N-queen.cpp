@@ -4,8 +4,10 @@ bool issafe(int** arr,int x, int y , int n){
 
     for(int row=0; row< x ; row++){
 
-        if(arr[row][y]==1){}
-        return false;
+        if(arr[row][y]==1){
+            return false;
+        }
+        
     }
     int row=x,col=y;
     while(row >= 0 && col>=0){
@@ -16,7 +18,7 @@ bool issafe(int** arr,int x, int y , int n){
         col--;
     }
     row=x;col=y;
-    while(row<x && col<y){
+    while(row>=0 && col<y){
         if(arr[row][col]==1){
             return false;
         }
@@ -66,7 +68,7 @@ int main(){
 
      }
      cout<<endl;
- } 
+    } 
 
  }
  return 0;
