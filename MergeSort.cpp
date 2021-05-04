@@ -51,13 +51,17 @@ void MergeS(int arr[],int l,int r){
 
 int main(){
     int n;
+    cout<<"Enter";
     cin>>n;
     int arr[n];
     for(int i=0;i<n;i++){
+        cout<<i+1;
         cin>>arr[i];
     }
 
     MergeS(arr,0,n);
-
+    for(int i=0; i<n;i++){
+        cout<<arr[i]<<" ";
+    }
     return 0;
 }
