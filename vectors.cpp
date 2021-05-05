@@ -1,0 +1,37 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+    vector<int> v;
+    v.push_back(1);
+    v.push_back(3);
+    v.push_back(2);
+    
+    for(int i=0; i<v.size();i++){
+        cout<<v[i]<<endl;
+    }
+
+    vector<int>::iterator it;
+    for(it=v.begin();it!=v.end();it++){
+        cout<<*it<<endl;
+    }
+
+    for(auto element:v){  //auto will be int
+        cout<<element<<endl;
+    }
+
+    v.pop_back(); //1 3
+
+    vector<int> v2 (3,50); //50 50 50
+
+    swap(v,v2);
+    for(auto element:v){  //auto will be int
+        cout<<element<<endl;
+    }
+    for(auto element:v2){  //auto will be int
+        cout<<element<<endl;
+    }
+
+
+    return 0;
+}
