@@ -24,7 +24,7 @@ int main(){
         v.push_back(make_pair(arr[i],i));
 
     }
-    sort(v.begin(),v.end() , myCompare);
+    sort(v.begin(),v.end(), myCompare);
     for(int i = 0 ; i < v.size();i++){
         arr[v[i].second]=i;
     }
