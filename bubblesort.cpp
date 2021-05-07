@@ -6,7 +6,7 @@ void bubble(int arr[], int n)
     int temp;
     for (int j = n-1; j >=0; j--)
     {
-        for (int i; i <=j; i++)
+        for (int i = 0; i <=j; i++)
         {
             if (arr[i] > arr[i + 1])
             {
