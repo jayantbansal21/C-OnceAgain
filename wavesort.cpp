@@ -22,9 +22,9 @@ void wave(int arr[],int n){
 }
 
 int main(){
-    int arr[]={5,9,2,1,6,11,14,13};
-    wave(arr,8);
-    for(int i =0;i<8;i++){
+    int arr[]={5,9,2,1,6,11,14};
+    wave(arr,7);
+    for(int i =0;i<7;i++){
         cout<<arr[i]<<endl;
     }
 }
