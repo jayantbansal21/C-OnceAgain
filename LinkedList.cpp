@@ -51,21 +51,36 @@ void display(node *head)
     node *n = head;
     while (n != NULL)
     {
-        cout << n->data << endl;
+        cout << n->data << " -> ";
         n = n->next;
     }
+    cout << "NULL \n";
 }
-
-void deletehead(node *head){
-
+//There is no need for temp but just to be on safer side we take another varible
+void deletehead(node *head)
+{
+    node *temp = head;
+    node *todelete = temp->next;
+    head = temp->next;  //or just head=head->next;
+    delete todelete;
 }
-void deletion(node *head,int val){
-    node* temp = head;
-    while(temp->next->data!=val){
-        temp=temp->next;
+void deletion(node *head, int val)
+{   
+    if(head==NULL){
+        return;
     }
-    node* todelete = temp->next;  //This because after the next line node will be deleted but we need to deallocate it too , so this will have the address
-    temp->next=temp->next->next;
+    if(head->next==NULL){
+        deletehead(head);
+        return;
+    }
+
+    node *temp = head;
+    while (temp->next->data != val)
+    {
+        temp = temp->next;
+    }
+    node *todelete = temp->next; //This because after the next line node will be deleted but we need to deallocate it too , so this will have the address
+    temp->next = temp->next->next;
     delete todelete;
 }
 int main()
@@ -73,10 +88,10 @@ int main()
     node *head = NULL;
     insertAtTail(head, 1);
     insertAtTail(head, 2);
-    insertAtTail(head,3);
+    insertAtTail(head, 3);
     display(head);
-    cout << search(head, 2)<<endl;
-    deletion(head,3);
+    cout << search(head, 2) << endl;
+    deletion(head, 3);
     display(head);
     return 0;
 }
