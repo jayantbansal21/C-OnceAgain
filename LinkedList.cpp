@@ -83,12 +83,15 @@ void deletion(node *head, int val)
     temp->next = temp->next->next;
     delete todelete;
 }
+
+
 int main()
 {
     node *head = NULL;
     insertAtTail(head, 1);
     insertAtTail(head, 2);
     insertAtTail(head, 3);
+    insertAtTail(head, 4);
     display(head);
     cout << search(head, 2) << endl;
     deletion(head, 3);
