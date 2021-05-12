@@ -55,7 +55,9 @@ int main()
     st.pop();
     cout << st.Top() << endl;
     st.pop();
+    cout<<st.Empty()<<endl;
     st.pop();
+    cout<<st.Empty()<<endl;
     cout << st.Top() << endl;
     return 0;
 }
