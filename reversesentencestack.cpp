@@ -7,7 +7,7 @@ void reverse(string s)
     for (int i = 0; i < s.length(); i++)
     {
         string word = "";
-        while (s.[i] != ' ' && i < s.length())
+        while (s[i] != ' ' && i < s.length())
         {
             word += s[i];
             i++;
