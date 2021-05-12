@@ -87,13 +87,12 @@ void deletion(node *&head, int pos)
 int main()
 {
     node *head = NULL;
-    Insert(head, 1);
     Insert(head, 2);
     Insert(head, 3);
     Insert(head, 4);
     Insert(head, 5);
     display(head);
-    insertathead(head, 6);
+    insertathead(head, 1);
     display(head);
     deletion(head,3);
     display(head);
