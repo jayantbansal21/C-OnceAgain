@@ -65,5 +65,7 @@ int main()
     Insert(head, 6);
 
     display(head);
+    evenafterodd(head);
+    display(head);
     return 0;
 }
