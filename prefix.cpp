@@ -2,12 +2,12 @@
 #include <stack>
 #include <math.h>
 using namespace std;
-int prefix(string s)
+int Prefix(string s)
 {
     stack<int> st;
     for (int i = s.length() - 1; i >= 0; i--)
     {
-        if (s[i] >= 0 && s[i] <= 9)
+        if (s[i] >= '0' && s[i] <= '9')
         {
             st.push(s[i] - '0');
         }
@@ -42,6 +42,6 @@ int prefix(string s)
 }
 int main(){
 
-    cout<<prefix("-+7*45+20");
+    cout<<Prefix("-+7*45+20");
     return 0;
 }
