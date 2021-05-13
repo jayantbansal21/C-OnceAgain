@@ -41,7 +41,7 @@ int Prefix(string s)
     return st.top();
 }
 int main(){
-
-    cout<<Prefix("-+7*45+20");
+    string s = "-+7*45+20";
+    cout<<Prefix(s);
     return 0;
 }
