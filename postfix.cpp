@@ -14,9 +14,9 @@ int postfix(string s)
         }
         else
         {
-            int op1 = st.top();
-            st.pop();
             int op2 = st.top();
+            st.pop();
+            int op1 = st.top();
             st.pop();
             switch (s[i])
             {
