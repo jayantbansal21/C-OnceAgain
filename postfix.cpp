@@ -41,7 +41,7 @@ int postfix(string s)
     return st.top();
 }
 int main()
-{
-    cout << postfix("46+2/5*7+");
+{   string s = "46+2/5*7+";
+    cout << postfix(s);
     return 0;
 }
