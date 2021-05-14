@@ -55,11 +55,11 @@ int main()
     string s = "{{([])}}";
     if (isvalid(s))
     {
-        cout << true;
+        cout << "Valid String";
     }
     else
     {
-        cout << false;
+        cout << "Invalid String";
     }
     return 0;
 }
