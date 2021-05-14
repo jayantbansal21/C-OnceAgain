@@ -13,7 +13,7 @@ bool isvalid(string s)
         {
             st.push(s[i]);
         }
-        else
+        else if(!st.empty())
         {
             switch (s[i])
             {
@@ -44,11 +44,15 @@ bool isvalid(string s)
             }
         }
     }
+    // if(!st.empty()){
+    //     ans = false;
+    // }
+     return ans;
 }
 
 int main()
 {
-    string s = "{([])}";
+    string s = "{{([])}}";
     if (isvalid(s))
     {
         cout << true;
