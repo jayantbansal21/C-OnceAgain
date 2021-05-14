@@ -71,8 +71,6 @@ int main()
     q.pop();
     q.pop();
     q.pop();
-    cout<<q.peek()<<endl;
     q.pop();
-    cout<<q.peek()<<endl;
     return 0;
 }
