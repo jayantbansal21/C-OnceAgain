@@ -36,10 +36,6 @@ public:
         }
         back->next = n;
         back = n;
-        // if (front == NULL)
-        // {
-        //     front = n;
-        // }
     }
     void pop()
     {
