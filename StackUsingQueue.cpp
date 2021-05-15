@@ -1,7 +1,7 @@
 //#include<iostream>
 #include "bits/stdc++.h"
 using namespace std;
-
+//Input method is costly
 class Stack
 {
     int N;
