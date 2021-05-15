@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+//Output method is costly
 class Stack
 {
     queue<int> q1;
