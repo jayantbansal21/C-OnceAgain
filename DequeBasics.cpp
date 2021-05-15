@@ -21,6 +21,6 @@ int main()
     {
         cout << i << " ";
     }
-    cout<<dq.size() ;
-    return 0 ;
+    cout << dq.size();
+    return 0;
 }
