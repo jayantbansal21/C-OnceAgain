@@ -6,6 +6,7 @@ void swap(int arr[],int a,int b){
     arr[a] = arr[b];
     arr[b] = temp;
 }
+#adding this commmen ther
 void dnf(int arr[],int n){
     int low=0;
     int mid=0;
